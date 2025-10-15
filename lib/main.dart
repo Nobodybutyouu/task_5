@@ -15,8 +15,7 @@ void main() {
   );
 
   atm.startTransaction();
-  // two different container method calls that delegate to parts
   atm.withdraw(200.0);
-  atm.withdraw(900.0); // show insufficient balance or dispenser limit
+  atm.withdraw(900.0); 
   atm.endTransaction();
 }
